@@ -1,0 +1,220 @@
+.results {
+  animation: fadeInUp 0.5s ease-out;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.lifespanCard {
+  flex-shrink: 0;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.15), rgba(129, 140, 248, 0.15));
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: var(--radius-lg);
+  padding: 2rem 2.5rem;
+  box-shadow: var(--shadow-glow);
+}
+
+.lifespanLabel {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+
+.lifespanValue {
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.1;
+  margin: 0.25rem 0;
+}
+
+.lifespanUnit {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+  min-width: 160px;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.statLabel {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.statValue {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.positive {
+  color: var(--accent-emerald);
+}
+
+.negative {
+  color: var(--accent-rose);
+}
+
+.section {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.sectionTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+}
+
+.sectionDesc {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+  font-style: italic;
+}
+
+.scores {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.scoreRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.scoreLetter {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.75rem;
+  color: var(--bg-primary);
+  flex-shrink: 0;
+}
+
+.scoreInfo {
+  flex: 1;
+}
+
+.scoreLabel {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.scoreValue {
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.barTrack {
+  height: 8px;
+  background: var(--bg-secondary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.recommendations {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.recItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.recBullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-blue);
+  flex-shrink: 0;
+  margin-top: 0.4rem;
+}
+
+.ecosystem {
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.ecosystemLabel {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.ecosystemBrand {
+  font-size: 1rem;
+  font-weight: 700;
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ecosystemTagline {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+@media (max-width: 500px) {
+  .hero {
+    flex-direction: column;
+  }
+  .lifespanCard {
+    width: 100%;
+  }
+}
